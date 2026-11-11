@@ -13,8 +13,8 @@
 
     body {
       font-family: system-ui, -apple-system, sans-serif;
-      background-color: #b4251b;
-      color: #f1f5f9;
+      background-color: #f8f9fa; /* Latar abu-abu muda terang seperti Foto 1 */
+      color: #333333;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
@@ -31,25 +31,13 @@
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     }
 
-    footer {
-      position: sticky;
-      bottom: 0;
-      z-index: 100;
-      background-color: #b4251b;
-      color: #f1f5f9;
-      padding: 12px 24px;
-      text-align: center;
-      font-size: 0.85rem;
-      box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.15);
-    }
-
     main {
       flex: 1;
       padding: 24px 16px;
     }
 
     .flex-container {
-     display: flex;
+      display: flex;
       flex-wrap: wrap;
       gap: 20px;
       justify-content: center;
@@ -58,21 +46,18 @@
     }
 
     .card {
-      flex: 0 1 260px;
+      width: 280px; /* Ukuran lebar kotak pas */
       background-color: #ffffff;
       border: 1px solid #e2e8f0;
       border-radius: 8px;
       overflow: hidden;
-      display: flex-nowrap;
-      flex-direction: column;
       cursor: pointer;
-      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
     }
 
     .card:hover {
-      transform: translateY(-4px) scale(1.03);
-      border-color: rgba(249, 115, 22, 0.4);
-      box-shadow: 0 10px 24px rgba(249, 115, 22, 0.18), 0 0 14px rgba(251, 146, 60, 0.28);
+      transform: translateY(-4px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     }
 
     .card img {
@@ -88,6 +73,15 @@
       line-height: 1.4;
       color: #475569;
     }
+
+    footer {
+      background-color: #ffffff;
+      color: #666666;
+      padding: 12px 24px;
+      text-align: center;
+      font-size: 0.85rem;
+      border-top: 1px solid #e2e8f0;
+    }
   </style>
 </head>
 <body>
@@ -100,38 +94,42 @@
     <div class="flex-container">
       <div class="card">
         <img src="karyaku/bangunan.warna.jpg" alt="Foto bangunan">
-        <p>Foto hasil bangunan </p>
+        <p>Foto hasil bangunan</p>
       </div>
 
       <div class="card">
-       <img src="karyaku/dokumen.radio.jpg" alt="Foto dokumen kunjungan">
-        <p>Foto hasil dokumen </p>
+        <img src="karyaku/dokumen.radio.jpg" alt="Foto dokumen kunjungan">
+        <p>Foto hasil dokumen</p>
       </div>
 
       <div class="card">
         <img src="karyaku/foto.bunga.jpg" alt="Foto bunga">
-        <p>Hasil foto bunga </p>
+        <p>Hasil foto bunga</p>
       </div>
 
       <div class="card">
         <img src="karyaku/foto.kasur.jpg" alt="Foto kasur gelap">
-        <p>Hasil foto kasur </p>
+        <p>Hasil foto kasur</p>
+      </div>
 
-        <div class="card">
+      <div class="card">
         <img src="karyaku/foto.lukisan.jpg" alt="Foto lukisan bagus">
-        <p>Hasil foto lukisan </p>
+        <p>Hasil foto lukisan</p>
+      </div>
 
-        <div class="card">
+      <div class="card">
         <img src="karyaku/foto.merah.jpg" alt="Foto lukisan digital">
-        <p>Hasil foto merah </p>
+        <p>Hasil foto merah</p>
+      </div>
 
-        <div class="card">
+      <div class="card">
         <img src="karyaku/foto.orang.jpg" alt="Foto katherin">
-        <p>Hasil foto orang </p>
+        <p>Hasil foto orang</p>
+      </div>
 
-        <div class="card">
+      <div class="card">
         <img src="karyaku/foto.pajang.jpg" alt="Foto pajagan foto">
-        <p>Hasil foto pajangan </p>
+        <p>Hasil foto pajangan</p>
       </div>
     </div>
   </main>
